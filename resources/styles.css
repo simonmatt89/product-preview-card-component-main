@@ -1,0 +1,122 @@
+/** @format */
+
+/*
+font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+body {
+  background-color: hwb(32 89% 5%);
+  font-size: 14px;
+}
+
+.main-container {
+  display: flex;
+  margin: 10% auto;
+  min-width: 250px;
+  width: 40%;
+  border: 1px solid 0%;
+  border-radius: 15px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.left {
+  width: 50%;
+  background-image: url("/Users/simonmatthews/Documents/Coding Projects/Front End Mentor/product-preview-card-component-main/images/image-product-desktop.jpg");
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.right {
+  width: 50%;
+  background-color: white;
+  min-width: 250px;
+}
+
+.text-border {
+  margin: 10%;
+}
+
+.text-border h4 {
+  font-family: Montserrat;
+  font-weight: 200;
+  color: hsl(0, 1%, 52%);
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+.text-border h2 {
+  font-family: Fraunces;
+  font-size: 2.5em;
+}
+
+.text-border p {
+  font-family: Montserrat;
+  font-weight: 50;
+  color: hsl(0, 1%, 52%);
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: hsl(158, 36%, 37%);
+  padding-right: 2rem;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 1.2rem;
+  font-family: Montserrat;
+  font-weight: 600;
+}
+
+button:active {
+  background-color: hsl(157, 35%, 10%);
+}
+
+.attribute {
+  margin: 0 auto;
+  bottom: 0%;
+  position: fixed;
+}
+/* Mobile Design 375px*/
+
+@media only screen and (max-width: 375px) {
+  .main-container {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    /*margin: auto;
+    min-width: 250px;
+    width: 100%;
+    border: 1px solid 0%;
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 1;
+    */
+  }
+
+  .left {
+    z-index: 3;
+    position: absolute;
+    background-image: url("/Users/simonmatthews/Documents/Coding Projects/Front End Mentor/product-preview-card-component-main/images/image-product-desktop.jpg");
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .right {
+    z-index: 1;
+    position: absolute;
+    background-color: white;
+    min-width: 250px;
+  }
+}
