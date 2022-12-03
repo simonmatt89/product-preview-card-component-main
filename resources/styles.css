@@ -23,7 +23,7 @@ body {
 
 .left {
   width: 50%;
-  background-image: url("/images/image-product-desktop.jpg");
+  background-image: url("/Users/simonmatthews/Documents/Coding Projects/Front End Mentor/product-preview-card-component-main/images/image-product-desktop1.jpg");
   background-repeat: none;
   background-size: cover;
   background-position: center;
@@ -50,6 +50,8 @@ body {
 .text-border h2 {
   font-family: Fraunces;
   font-size: 2.5em;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .text-border p {
@@ -80,43 +82,62 @@ button {
 }
 
 button:active {
-  background-color: hsl(157, 35%, 10%);
+  background-color: hsl(161, 39%, 21%);
 }
 
-.attribute {
+footer {
   margin: 0 auto;
   bottom: 0%;
-  position: fixed;
 }
 /* Mobile Design 375px*/
 
 @media only screen and (max-width: 375px) {
   .main-container {
-    display: grid;
-    grid-template: 1fr / 1fr;
-    /*margin: auto;
-    min-width: 250px;
     width: 100%;
+    display: grid;
+    grid-template-rows: 0.8fr 1.2fr;
+    overflow: hidden;
     border: 1px solid 0%;
     border-radius: 15px;
-    overflow: hidden;
-    z-index: 1;
-    */
   }
 
   .left {
-    z-index: 3;
-    position: absolute;
-    background-image: url("/Users/simonmatthews/Documents/Coding Projects/Front End Mentor/product-preview-card-component-main/images/image-product-desktop.jpg");
+    background-image: url("/Users/simonmatthews/Documents/Coding Projects/Front End Mentor/product-preview-card-component-main/images/image-product-mobile1.jpg");
     background-repeat: none;
     background-size: cover;
     background-position: center;
+    width: 100%;
   }
 
   .right {
-    z-index: 1;
-    position: absolute;
     background-color: white;
-    min-width: 250px;
+    width: 100%;
+  }
+
+  .text-border {
+    margin: 5%;
+  }
+
+  .text-border p {
+    font-size: 1rem;
+    line-height: 1.8rem;
+    font-family: Montserrat;
+    font-weight: 80;
+    color: hsl(0, 1%, 52%);
+  }
+
+  .text-border h2 {
+    font-family: Fraunces;
+    font-size: 2.5em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: hsl(158, 36%, 37%);
+    padding-right: 7rem;
   }
 }
