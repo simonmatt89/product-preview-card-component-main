@@ -91,7 +91,7 @@ footer {
 }
 /* Mobile Design 375px*/
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 425px) {
   .main-container {
     width: 100%;
     display: grid;
