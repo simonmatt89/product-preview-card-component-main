@@ -23,7 +23,7 @@ body {
 
 .left {
   width: 50%;
-  background-image: url("/Users/simonmatthews/Documents/Coding Projects/Front End Mentor/product-preview-card-component-main/images/image-product-desktop1.jpg");
+  background-image: url("/images/image-product-desktop1.jpg");
   background-repeat: none;
   background-size: cover;
   background-position: center;
